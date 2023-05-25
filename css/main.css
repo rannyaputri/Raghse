@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+      --lg-font: 'Kaisei Tokumin', serif;
+      --sm-font: 'Poppins', sans-serif;
+      --ijo: #8F9E8B;
+      --coksu: #F9F6E5;
+      --darkb: #603912;
+      --pink: #e5345b;
+      --yellow: #FFFF00;
+}
+
+body {
+      font-family: var(--sm-font);
+      background: var(--darkb);
+}
+
+.container h1 a {
+      font-size: 300px;
+}
+
+/* buttom */
+.bg-primary {
+      background-color: var(--darkb) !important;
+}
+
+.btn:not(.nav-btns button) {
+      background-color: var(--darkb);
+      color: rgb(85, 85, 85);
+      padding: 10px 28px;
+      border-radius: 25px;
+      border: 1px solid rgb(85, 85, 85);
+}
+
+/* text color */
+.text-primary {
+      color: #eef6ed !important;
+}
+
+.btn:not(.nav-btns button):hover {
+      background-color: var(--ijo);
+      color: #fff;
+      border-color: var(--ijo);
+}
+
+/* end buttom */
+/* title */
+.title h2::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 50px;
+      background-color: var(--coksu);
+      left: -20px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+}
+
+/* collection */
+.active-filter-btn {
+      background-color: var(--ijo) !important;
+      /* color: var(--ijo) !important; */
+      border-color: var(--ijo) !important;
+}
+
+.collection-img span {
+      top: 20px;
+      right: 20px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+}
+
+/* special */
+.special-img span {
+      top: 20px;
+      right: 20px;
+}
+
+.special-list .btn {
+      padding: 8px 20px !important;
+}
+
+.special-img img {
+      border-radius: 15px;
+      transition: all 0.3s ease;
+}
+
+.special-img:hover img {
+      transform: scale(1.2);
+}
+
+/* end of special */
+
+
+
+
+
+/* media queries */
+.filter-button-group .btn:hover {
+      color: #fff !important;
+}
+
+/* end of collection */
+
+/* image collection */
+.collection-list .collection-img img {
+      /* height: 25rem; */
+      border-radius: 15px;
+
+}
+
+/* .carousel-inner h1 {
+      font-size: 60px;
+      font-family: var(--lg-font);
+} */
+
+.navbar {
+      box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+      width: 100px;
+}
+
+.navbar-brand span {
+      letter-spacing: 2px;
+      font-family: var(--lg-font);
+      color: #1D3228;
+}
+
+
+.nav-link:hover {
+      color: #68413A !important;
+      font-size: 25px;
+}
+
+.nav-item {
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+#header {
+      /* display: flex;
+      position: relative;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column; */
+      display: flex;
+      position: relative;
+      background: url(../images/portrait-young-attractive-smiling-girl-with-two-braids-tweed-jumpsuit-eyeglasses-with-black-backpack-shoulder-holding-book-hand-while-happily-looking-camera-beige-background.jpg) top/cover no-repeat;
+      /* background-position: right;
+      background-repeat: no-repeat;
+      background-size: 900px 700px;
+      background-attachment: scroll; */
+
+}
+
+
+
+/* media quaries */
+@media(min-width: 992px) {
+      .nav-item {
+            border-bottom: none;
+
+      }
+}
